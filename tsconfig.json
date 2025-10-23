@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+    "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+    "strictNullChecks": true /* Enable strict checking of null and undefined. */,
+    "strictFunctionTypes": true /* Enable strict checking of function types. */,
+    "strictPropertyInitialization": true /* Ensure non-undefined class properties are initialized in the constructor. */,
+    "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
+    "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */,
+
+    /* Modules */
+    "moduleResolution": "node16" /* Specify how modules are resolved. */,
+    "module": "node16" /* Specify module code generation: 'none', 'commonjs', 'amd', 'umd', 'system', 'es2015', 'es2020', 'esnext'. */,
+    "target": "esnext" /* Specify ECMAScript target version: 'es3', 'es5', 'es2015', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 'esnext'. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
+    "isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
+
+    /* Emit */
+    "outDir": "./dist" /* Redirect output structure to the directory. */,
+    "declaration": true /* Generate .d.ts files. */,
+    "sourceMap": true /* Generates corresponding .map file. */,
+    "noEmitOnError": true /* Do not emit outputs if any errors were reported. */,
+
+    /* Language and Environment */
+    "lib": [
+      "esnext",
+      "dom"
+    ] /* Specify a list of library files to be included in the compilation. */,
+    "jsx": "react-jsx" /* Specify JSX code generation. */,
+
+    /* Interop Constraints */
+    "skipLibCheck": true /* Skip type checking of declaration files. */
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ] /* Specify file patterns to include in the compilation. */,
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] /* Specify file patterns to exclude from the compilation. */
+}
