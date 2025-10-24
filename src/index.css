@@ -1,1 +1,59 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-grey-20: #f8f4eb;
+  --color-grey-50: #efe6e6;
+  --color-grey-100: #dfcccc;
+  --color-grey-500: #5e0000;
+  --color-primary-100: #ffe1e0;
+  --color-primary-300: #ffa6a3;
+  --color-primary-500: #ff6b66;
+  --color-secondary-400: #ffcd58;
+  --color-secondary-500: #ffc132;
+
+  --font-dmSans: "DM Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --breakpoint-xs: 30em;
+  --breakpoint-sm: 48em;
+  --breakpoint-md: 66.25em;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100vh;
+  width: 100%;
+  font-family: "DM-Sans", sans-serif;
+  @apply text-grey-500;
+}
+
+@utility gradient-yellowRed {
+  @apply bg-linear-90 from-[#FF616A] to-[#FFC837];
+}
+
+@utility mobile-home {
+  @apply bg-[url("./assets/HomePageGraphic.png")];
+}
+
+@utility evolve-text {
+  @apply bg-[url('./assets/EvolveText.png')];
+}
+
+@utility abstract-waves {
+  @apply bg-[url('./assets/AbstractWaves.png')];
+}
+
+@utility sparkles {
+  @apply bg-[url('./assets/Sparkles.png')];
+}
+
+@utility circles {
+  @apply bg-[url('./assets/Circles.png')];
+}
+
+@utility flex-between {
+  @apply flex justify-between items-center;
+}
