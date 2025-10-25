@@ -27,7 +27,8 @@ body,
   height: 100vh;
   width: 100%;
   font-family: "DM-Sans", sans-serif;
-  @apply text-grey-500;
+  color: var(--color-grey-500)
+  
 }
 
 @utility gradient-yellowRed {
@@ -35,23 +36,23 @@ body,
 }
 
 @utility mobile-home {
-  @apply bg-[url("./assets/HomePageGraphic.png")];
+  @apply bg-[url("./assets/HomePageGraphic.png")] bg-cover bg-center bg-no-repeat;
 }
 
 @utility evolve-text {
-  @apply bg-[url('./assets/EvolveText.png')];
+  @apply bg-[url('./assets/EvolveText.png')] bg-cover bg-center bg-no-repeat;
 }
 
 @utility abstract-waves {
-  @apply bg-[url('./assets/AbstractWaves.png')];
+  @apply bg-[url('./assets/AbstractWaves.png')] bg-cover bg-center bg-no-repeat;
 }
 
 @utility sparkles {
-  @apply bg-[url('./assets/Sparkles.png')];
+  @apply bg-[url('./assets/Sparkles.png')] bg-cover bg-center bg-no-repeat;
 }
 
 @utility circles {
-  @apply bg-[url('./assets/Circles.png')];
+  @apply bg-[url('./assets/Circles.png')] bg-cover bg-center bg-no-repeat;
 }
 
 @utility flex-between {

@@ -15,7 +15,7 @@ type Props = {
 
 const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-  const isAboveMediumScreens: boolean = useMediaQuery("(min-width: 1060px)");
+  const isAboveMediumScreens: boolean = useMediaQuery("(min-width: 1100px)");
   const navbarBackground = isTopOfPage ? "":"bg-primary-100 drop-shadow"
 
   return (
