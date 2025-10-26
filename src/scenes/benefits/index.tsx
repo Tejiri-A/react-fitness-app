@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import { type BenefitType, SelectedPage } from "@/shared/types.ts";
 import HText from "@/shared/HText.tsx";
 import Benefit from "./Benefit.tsx";
+import ActionButton from "@/shared/ActionButton.tsx";
+import { images } from "@/assets/index.ts";
 
 const benefits: BenefitType[] = [
   {
@@ -86,6 +88,52 @@ const Benefits = ({ setSelectedPage }: Props) => {
             />
           ))}
         </motion.div>
+        {/* GRAPHICS AND DESCRIPTION */}
+        <div className="md:flex justify-between items-center gap-20 mt-16 md:mt-28">
+          {/* GRAPHIC */}
+          <img
+            src={images.benefitsPageGraphic}
+            alt="benefits page graphic"
+            className="mx-auto"
+          />
+
+          {/* DESCRIPTION */}
+          <div>
+            {/* TITLE */}
+            <div className="relative">
+              <div className="before:-top-20 before:-left-20 before:-z-1 before:absolute before:w-31 before:h-[74px] before:abstract-waves">
+                <HText>
+                  MILLIONS OF HAPPY MEMBERS GETTING{" "}
+                  <span className="text-primary-500">FIT</span>
+                </HText>
+              </div>
+            </div>
+            {/* DESCRIPTION */}
+            <div>
+              <p className="my-5 text-sm">
+                Join thousands who have transformed their lives with our
+                personalized programs, expert coaching, and supportive
+                community. From beginner-friendly classes to advanced strength
+                and conditioning, we have everything you need to reach your
+                goals.
+              </p>
+              <p className="mb-5 text-sm">
+                Start your journey today — see real results, build lasting
+                healthy habits, and enjoy a gym that feels like home.
+              </p>
+              <p></p>
+            </div>
+
+            {/* BUTTON */}
+            <div className="relative mt-16">
+              <div className="before:right-40 before:-bottom-20 before:-z-1 before:absolute before:w-[135px] before:h-32 before:sparkles">
+                <ActionButton setSelectedPage={setSelectedPage}>
+                  Join Now
+                </ActionButton>
+              </div>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </section>
   );

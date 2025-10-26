@@ -11,6 +11,12 @@ import sparkles from "./Sparkles.png";
 import sponsorForbes from "./SponsorForbes.png";
 import sponsorFortune from "./SponsorFortune.png";
 import sponsorRedBull from "./SponsorRedBull.png";
+import image1 from "./image1.png";
+import image2 from "./image2.png";
+import image3 from "./image3.png";
+import image4 from "./image4.png";
+import image5 from "./image5.png";
+import image6 from "./image6.png";
 
 // Import images
 
@@ -29,6 +35,12 @@ type ImageAssets = {
   sponsorForbes: string;
   sponsorFortune: string;
   sponsorRedBull: string;
+  image1: string;
+  image2: string;
+  image3: string;
+  image4: string;
+  image5: string;
+  image6: string;
 };
 
 // Export the images as an object with typed properties
@@ -46,6 +58,12 @@ export const images: ImageAssets = {
   sponsorForbes,
   sponsorFortune,
   sponsorRedBull,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
 };
 
 // Export individual images
@@ -63,4 +81,10 @@ export {
   sponsorForbes,
   sponsorFortune,
   sponsorRedBull,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
 };
