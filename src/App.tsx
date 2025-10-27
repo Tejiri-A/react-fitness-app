@@ -4,6 +4,7 @@ import { SelectedPage } from "./shared/types.ts";
 import Home from "@/scenes/home/index.tsx";
 import Benefits from "@/scenes/benefits/index.tsx";
 import OurClasses from "@/scenes/ourClasses/index.tsx";
+import ContactUs from "./scenes/ContactUs/index.tsx";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -37,6 +38,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
     </div>
   );
 }
