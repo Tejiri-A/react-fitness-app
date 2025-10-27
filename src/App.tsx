@@ -5,6 +5,7 @@ import Home from "@/scenes/home/index.tsx";
 import Benefits from "@/scenes/benefits/index.tsx";
 import OurClasses from "@/scenes/ourClasses/index.tsx";
 import ContactUs from "./scenes/ContactUs/index.tsx";
+import Footer from "@/scenes/Footer/index.tsx";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -39,6 +40,7 @@ function App() {
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer/>
     </div>
   );
 }

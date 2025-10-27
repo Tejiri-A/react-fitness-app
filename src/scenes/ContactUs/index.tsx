@@ -4,8 +4,7 @@ import { contactUsPageGraphic } from "@/assets/index.ts";
 import HText from "@/shared/HText.tsx";
 import { FormEvent } from "react";
 import { useForm } from "react-hook-form";
-import { METHODS } from "http";
-import { p } from "framer-motion/client";
+
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
